@@ -2,3 +2,4 @@
 node_modules/
 StormLib/
 stormlib-*.tgz
+tmp/

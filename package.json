@@ -1,6 +1,6 @@
 {
   "name": "stormlib-node",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Node.js bindings for StormLib to work with MPQ archives",
   "main": "src/index.js",
   "type": "module",
