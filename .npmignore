@@ -1,0 +1,32 @@
+# Ignore everything in StormLib except source files
+StormLib/build
+
+# Ignore test files
+test
+
+# Ignore build artifacts
+build
+*.o
+*.so
+*.a
+*.lib
+*.dll
+
+# Ignore development files
+.github
+.vscode
+.eslintrc.js
+.prettierrc
+
+# Ignore git files
+.git
+.gitignore
+
+# Ignore npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
