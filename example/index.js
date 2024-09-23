@@ -1,4 +1,4 @@
-import { Archive } from 'stormlib-node';
+import { Archive } from 'stormlib-node-bindings';
 import { writeFile, readFile, unlink } from 'fs/promises';
 
 async function runTest() {
