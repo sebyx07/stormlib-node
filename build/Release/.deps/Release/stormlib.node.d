@@ -1,1 +1,0 @@
-cmd_Release/stormlib.node := ln -f "Release/obj.target/stormlib.node" "Release/stormlib.node" 2>/dev/null || (rm -rf "Release/stormlib.node" && cp -af "Release/obj.target/stormlib.node" "Release/stormlib.node")

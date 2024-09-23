@@ -30,7 +30,10 @@
     "node-addon-api": "^5.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.11.0",
     "chai": "^4.3.7",
+    "eslint": "^9.11.0",
+    "globals": "^15.9.0",
     "mocha": "^10.2.0",
     "tmp-promise": "^3.0.3"
   },
