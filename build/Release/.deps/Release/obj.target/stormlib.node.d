@@ -1,0 +1,1 @@
+cmd_Release/obj.target/stormlib.node := g++ -o Release/obj.target/stormlib.node -shared -pthread -rdynamic -m64  -Wl,-soname=stormlib.node -Wl,--start-group Release/obj.target/stormlib/ext/stormlib.o Release/obj.target/node_modules/node-addon-api/nothing.a -Wl,--end-group ../StormLib/build/libstorm.a -lz -lbz2
