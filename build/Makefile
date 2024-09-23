@@ -344,7 +344,7 @@ endif
 
 quiet_cmd_regen_makefile = ACTION Regenerating $@
 cmd_regen_makefile = cd $(srcdir); /home/superuser/.nvm/versions/node/v22.3.0/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/home/superuser/.cache/node-gyp/22.3.0" "-Dnode_gyp_dir=/home/superuser/.nvm/versions/node/v22.3.0/lib/node_modules/npm/node_modules/node-gyp" "-Dnode_lib_file=/home/superuser/.cache/node-gyp/22.3.0/<(target_arch)/node.lib" "-Dmodule_root_dir=/home/superuser/workspace/stormlib-node" "-Dnode_engine=v8" "--depth=." "-Goutput_dir=." "--generator-output=build" -I/home/superuser/workspace/stormlib-node/build/config.gypi -I/home/superuser/.nvm/versions/node/v22.3.0/lib/node_modules/npm/node_modules/node-gyp/addon.gypi -I/home/superuser/.cache/node-gyp/22.3.0/include/node/common.gypi "--toplevel-dir=." binding.gyp
-Makefile: $(srcdir)/../../.cache/node-gyp/22.3.0/include/node/common.gypi $(srcdir)/binding.gyp $(srcdir)/../../.nvm/versions/node/v22.3.0/lib/node_modules/npm/node_modules/node-gyp/addon.gypi $(srcdir)/node_modules/node-addon-api/node_api.gyp $(srcdir)/build/config.gypi
+Makefile: $(srcdir)/binding.gyp $(srcdir)/../../.cache/node-gyp/22.3.0/include/node/common.gypi $(srcdir)/build/config.gypi $(srcdir)/../../.nvm/versions/node/v22.3.0/lib/node_modules/npm/node_modules/node-gyp/addon.gypi $(srcdir)/node_modules/node-addon-api/node_api.gyp
 	$(call do_cmd,regen_makefile)
 
 # "all" is a concatenation of the "all" targets from all the included

@@ -1,9 +1,10 @@
 import { execSync } from 'child_process';
 import { existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
+import { cwd, platform, chdir } from 'process';
 
 const STORMLIB_REPO = 'https://github.com/ladislav-zezula/StormLib.git';
-const STORMLIB_DIR = join(process.cwd(), 'StormLib');
+const STORMLIB_DIR = join(cwd(), 'StormLib');
 
 function runCommand(command) {
   console.log(`Running: ${command}`);
@@ -25,9 +26,9 @@ function compileStormLib() {
     mkdirSync(buildDir);
   }
 
-  process.chdir(buildDir);
+  chdir(buildDir);
 
-  if (process.platform === 'win32') {
+  if (platform === 'win32') {
     runCommand('cmake .. -G "Visual Studio 16 2019" -A x64 -DCMAKE_POSITION_INDEPENDENT_CODE=ON');
     runCommand('cmake --build . --config Release');
   } else {
