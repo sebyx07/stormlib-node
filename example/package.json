@@ -11,6 +11,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "stormlib-node-bindings": "^1.0.0"
+    "stormlib-node-bindings": "^1.0.1"
   }
 }

@@ -19,10 +19,10 @@ node-addon-api@^5.0.0:
   resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-5.1.0.tgz#49da1ca055e109a23d537e9de43c09cca21eb762"
   integrity sha512-eh0GgfEkpnoWDq+VY8OyvYhFEzBk6jIYbRKdIlyTiAXIVJ8PyBaKb0rp7oDtoddbdoHWhq8wwr+XZ81F1rpNdA==
 
-stormlib-node-bindings@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/stormlib-node-bindings/-/stormlib-node-bindings-1.0.0.tgz#a2e31dbbe788f9df2dce88c2d452aa59eed1600b"
-  integrity sha512-vEZtyMt3p2fs98TWs1Va40UiYK2MfykWKLNY4+MTtKdVhPhiV+DyEdU90S7/f+Yh+vbLtUsSPugE1+JlAffbsw==
+stormlib-node-bindings@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/stormlib-node-bindings/-/stormlib-node-bindings-1.0.1.tgz#a1e0fbb81bd950a45a5ca71dd8cdd3e9a96c6038"
+  integrity sha512-xm6X83ZNwX3fwDURcZURMCjdVQ5XLskGWr9I2U0DLYUA4/Wz+rvUroELZKLGsQZv+RygdFfTEBJxm2x6xGP6Ww==
   dependencies:
     bindings "^1.5.0"
     node-addon-api "^5.0.0"
