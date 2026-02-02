@@ -4,3 +4,5 @@ StormLib/
 stormlib-*.tgz
 tmp/
 build/
+dist/
+.npmrc

@@ -13,13 +13,11 @@
         "<!(node -p \"require('node-addon-api').gyp\")"
       ],
       "defines": [ "NAPI_DISABLE_CPP_EXCEPTIONS" ],
-      "libraries": [
-        "../StormLib/build/libstorm.a"
-      ],
+      "libraries": [],
       "conditions": [
         ["OS=='win'", {
           "libraries": [
-            "../StormLib/build/Release/storm.lib"
+            "../StormLib/build/Release/StormLib.lib"
           ],
           "msvs_settings": {
             "VCCLCompilerTool": {
@@ -29,6 +27,7 @@
         }],
         ["OS=='mac' or OS=='linux'", {
           "libraries": [
+            "../StormLib/build/libstorm.a",
             "-lz",
             "-lbz2"
           ],
